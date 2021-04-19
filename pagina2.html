@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="5CBD50">
+ 
+        <!--Falta una etiqueta importante-->
+
+        <h1>Elementos de formulario</h1>
+        <br>
+        <hr>
+        <br>
+        <!--Indicamos que en nuestra pagina existen elementos de formulario-->
+        <form action="pagina1.html" method="post">
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" id="nombre" ></td>
+            </tr>
+            <tr>
+                <td><label for="apellido">Apellido</label></td>
+                <td><input type="text" id="apellido" ></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" ></td>
+            </tr>
+            <tr>
+                <td><label for="profesion">Profesión</label></td>
+                <td><select name="profesion" id="">
+                    <option value="Ingeniero">Ingeniero</option>
+                    <option value="Diseñador">Diseñador</option>
+                    <option value="Arquitecto">Arquitecto</option>
+                    <option value="Abogado">Abogado</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="masculino">Masculino</label></td>
+                <td><input type="radio" id="masculino" name="genero" value = "masculino"></td>
+            </tr>
+            <tr>
+                <td><label for="femenino">Femenino</label></td>
+                <td><input type="radio" id="femenino" name="genero" value = "femenino"></td>
+            </tr>
+            <tr>
+                <td>Estado Civil: </td>
+                <td><label for="soltero">Soltero</label>
+                    <input type="checkbox" id="soltero" >
+                    <label for="casado">Casado</label>
+                    <input type="checkbox" id="casado" >
+                    <label for="divorciado">Divorciado</label>
+                    <input type="checkbox" id="divorciado" ></td>
+            </tr>
+
+            <tr>
+                <td>Descripción: </td>
+                <td><textarea name="descripcion" ></textarea></td>
+            </tr>
+            <tr>
+                <td>Descripción: </td>
+                <td><input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
